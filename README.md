@@ -2,73 +2,39 @@
 
 A Python project to scrape the Indian Express website's business section, extract news article details, and store them in an SQL database.
 
+
 ## Table of Contents
 
 - [Project Description](#project-description)
-
-- [Installation](#installation)
 
 - [Usage](#usage)
 
 - [Code Explanation](#code-explanation)
 
-- [Contributing](#contributing)
-
-- [License](#license)
+- [Database Result](#database-result)
 
 - [Contact](#contact)
+
 
 ## Project Description
 
 This project scrapes the business section of the Indian Express website to extract news articles, including the title, content, date, and author of each article. The scraped data is then stored in an SQL database for further analysis or usage.
 
-## Installation
-
-1\. Clone the repository:
-
-    ```bash
-
-    git clone https://github.com/yourusername/indian-express-business-scraper.git
-
-    cd indian-express-business-scraper
-
-    ```
-
-2\. Create a virtual environment and activate it (optional but recommended):
-
-    ```bash
-
-    python3 -m venv venv
-
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-    ```
-
-3\. Install the required dependencies:
-
-    ```bash
-
-    pip install -r requirements.txt
-
-    ```
-
 ## Usage
 
-1\. Run the scraper script:
+1\. Run the ipynb file in your google collab or jupyter notebook:
 
-    ```bash
 
-    python updated_task_2_aayush.py
+    python Automatic-News-Scrapper.ipynb
 
-    ```
 
     This will scrape the Indian Express business section and store the articles in the specified SQL database.
 
 ## Code Explanation
 
-### Scraper Script (`updated_task_2_aayush.py`)
+### Scraper Script (`python Automatic-News-Scrapper.ipynb`)
 
-The script `updated_task_2_aayush.py` performs the following tasks:
+The script `python Automatic-News-Scrapper.ipynb` performs the following tasks:
 
 1\. **Imports necessary libraries**: Libraries for web scraping (like BeautifulSoup and requests), and SQL database connection (like sqlite3 or SQLAlchemy).
 
@@ -201,3 +167,17 @@ conn = sqlite3.connect('news.db')
 df.to_sql('business_news', conn, if_exists='replace', index=False)
 
 conn.close()
+
+```
+
+## Database Result
+
+![image](https://github.com/aayushkataria123/Automatic-News-Scrapper/assets/137820574/af36550f-4e57-4375-9edc-15d58c9c5590)
+
+
+## Contact
+
+For any questions or feedback, please contact:
+
+Your Name - aayushkataria1910@gmail.com
+GitHub - @aayushkataria123
